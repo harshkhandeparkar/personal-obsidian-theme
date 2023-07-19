@@ -23,7 +23,7 @@ body {
   --accent-d: 75%; /* Accent lightness Dark Mode */
   --accent-l: 60%; /* Accent lightness Light Mode */
 
-  --divider-color: rgba(250, 129, 255, 0.502);
+  --divider-color: rgba(250, 129, 255, 0.5);
 
   --accent-rgb-color: #fa81ff;
   --blue: #2e80f2;
@@ -281,9 +281,15 @@ body.theme-dark.is-mobile {
   --atom-yellow: #e5c07b;
 }
 
+.workspace-tab-header.is-active .workspace-tab-header-inner::after {
+  opacity: initial;
+}
+
 .workspace-tab-header.is-active {
   box-shadow: none;
   background-color: var(--color-base-10);
+
+  margin: 1px 0px;
 }
 
 .workspace-split.mod-root .workspace-tab-header.is-active::before, .workspace-split.mod-root .workspace-tab-header.is-active::after {
